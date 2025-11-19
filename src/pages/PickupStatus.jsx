@@ -12,7 +12,7 @@ const PickupStatus = () => {
     fetchPickup();
 
     // Connect to Socket.io for real-time updates
-    const socket = io('http://localhost:5001');
+    const socket = io('https://ecotech-backend-7.onrender.com');
     const userId = JSON.parse(localStorage.getItem('user'))?.id;
 
     if (userId) {
