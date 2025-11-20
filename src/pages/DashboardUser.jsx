@@ -14,7 +14,7 @@ const DashboardUser = () => {
     fetchData();
 
     // Connect to Socket.io for real-time updates
-    const socket = io('https://ecotech-backend-7.onrender.com');
+    const socket = io('https://localhost:5001');
     
     if (user?.id) {
       socket.emit('join-room', user.id);

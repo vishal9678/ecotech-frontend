@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://ecotech-backend-7.onrender.com',
+        target: 'https://localhost:5000',
         changeOrigin: true,
       },
     },

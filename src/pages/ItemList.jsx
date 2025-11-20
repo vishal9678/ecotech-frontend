@@ -43,7 +43,7 @@ const ItemList = () => {
               <div key={item._id} className="card">
                 {item.images?.[0] && (
                   <img
-                    src={`https://ecotech-backend-7.onrender.com${item.images[0]}`}
+                    src={`https://localhost:5001 ${item.images[0]}`}
                     alt={item.title}
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
